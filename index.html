@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tribute to Swapna Ma'am</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #fff8f0;
+      color: #333;
+    }
+    header {
+      background-color: #b22222;
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+    }
+    .intro {
+      max-width: 800px;
+      margin: auto;
+      padding: 30px;
+      background-color: white;
+      border-radius: 10px;
+      margin-top: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .section {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #fffaf2;
+      border-left: 5px solid #b22222;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #b22222;
+      color: white;
+      margin-top: 40px;
+    }
+    img {
+      max-width: 300px;
+      border-radius: 20px;
+      margin-top: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    /* Music Toggle Button */
+    #music-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 10px 15px;
+      background-color: #b22222;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Thank You Swapna Ma'am</h1>
+  <p>A heartfelt tribute from your student</p>
+</header>
+
+<!-- Guru Purnima Song Music -->
+<audio id="bg-music" autoplay loop>
+  <source src="audio/guru-purnima-song.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<!-- Toggle Music Button -->
+<button id="music-btn" onclick="toggleMusic()">🔊 Toggle Music</button>
+
+<script>
+  const music = document.getElementById("bg-music");
+  const button = document.getElementById("music-btn");
+
+  function toggleMusic() {
+    if (music.paused) {
+      music.play();
+      button.textContent = "🔊 Music On";
+    } else {
+      music.pause();
+      button.textContent = "🔇 Music Off";
+    }
+  }
+</script>
+
+<!-- Teacher Photo -->
+<img src="images/swapna_mam.jpg" alt="Swapna Ma'am">
+
+<!-- Emotional Intro -->
+<div class="intro">
+  <h2>🌸 You Are More Than a Teacher</h2>
+  <p>Swapna Ma'am, you didn't just teach Physics—you taught us how to believe in ourselves, how to be curious, and how to see the world with wonder. You made the toughest concepts feel simple and the hardest days feel lighter.</p>
+</div>
+
+<!-- Life Lessons -->
+<div class="section">
+  <h3>💡 Lessons That Changed Us</h3>
+  <ul>
+    <li>“Physics is everywhere”—you made us feel that!</li>
+    <li>You taught us to think, not just memorize.</li>
+    <li>You turned fear into fascination.</li>
+  </ul>
+</div>
+
+<!-- Heart Touching Message -->
+<div class="section">
+  <h3>❤️ Special Message for You</h3>
+  <p>
+    To My Guiding Light, Swapna Ma’am,<br><br>
+
+    On this sacred day of Guru Purnima, I fold my hands and bow my head with deepest respect and gratitude.
+    You are not just a teacher who taught lessons from textbooks — you are the one who taught me how to believe in myself,
+    who listened when no one else did,
+    who stood by me like a pillar of strength when life felt heavy.<br><br>
+
+    Your words are etched in my heart, your smile still brings calm, and your encouragement still pushes me to dream beyond boundaries.
+    Your presence has not just touched my mind but shaped my soul — with patience, compassion, and wisdom.<br><br>
+
+    Thank you for being my mentor, my guide, and a second mother.
+    I am what I am today — because you saw something in me, even when I couldn’t see it in myself.<br><br>
+
+    Happy Guru Purnima, Ma’am.<br>
+    You will forever hold a special place in my heart.<br><br>
+
+    With love and eternal gratitude,<br>
+    — Rajashree 🌼
+  </p>
+</div>
+
+<!-- Final Thank You -->
+<div class="section">
+  <h3>🌟 What You Mean to Me</h3>
+  <p>You're not just a teacher, you're my inspiration. Your kindness, strength, and constant encouragement are unforgettable. Thank you for believing in me when I doubted myself.</p>
+</div>
+
+<footer>
+  Made with ❤️ by Rajashree | © 2025 Tribute to Swapna Ma'am
+</footer>
+
+</body>
+</html>
